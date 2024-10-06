@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+.nav{
+    height: 9vh;
+    background-color: rgb(43, 97, 69) ;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+}
+
+.logo{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 1px 2px 3px #fff;
+}
+.links{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   gap: 4vw;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease-out;
+    font-size: 2.5vh;
+    /* font-size: 3vh; */
+
+}
+.links a:hover{
+    color: rgb(54, 221, 185);
+    text-decoration: underline;
+}
+.menu{
+    display: none;
+    font-size: 4vh;
+}
+.btn{
+    padding: 1vh 2vh;
+    background-color: rgb(2 147 129) ;
+    border-radius: .7vh;
+    font-size: 2.5vh;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color:  rgb(2 147 129);
+    box-shadow: 1px 2px 3px #fff;
+}
+
+/* Responsiveness  */
+/* @media (min-width:550px) {
+    */
+    /* } */
+    @media (max-width:550px) {
+    .menu{
+        display: inline-block;
+    }
+    .nav{
+        background-color: transparent;
+        color:  rgb(43, 97, 69) ;;
+        box-shadow: 1px 2px 6px black;
+        padding: 1vw 3.3vw;
+        justify-content: space-between;
+    }
+    .logo{
+        color:  rgb(43, 97, 69) ;;
+
+        font-size: 4.5vh;
+        /* font-weight: 500; */
+    }
+    .links{
+        display: none;
+    }
+    .btn{
+        font-size: 3vh;
+        padding: 1.3vh 2.2vh;
+    }
+}
+@media (min-width:550px ) and (max-width:768px) {
+    .links {
+        gap: 5vh;
+        
+    }
+    .links a{
+        font-size: 3vh;
+    }
+}
+@media (min-width:769px) and (max-width:992px) {
+    .links{
+        gap: 6vh;
+    }
+    .nav{
+        padding: 3vw;
+    }
+    .links a{
+        font-size: 3vh;
+
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .links{
+        gap: 6vh;
+
+    }
+    /* .links a{
+        font-size: 3.8vh;
+    } */
+    
+}
+@media (min-width:1201px) {
+    .links a{
+       /* font-size: 3.1vh; */
+    }
+    
+}
